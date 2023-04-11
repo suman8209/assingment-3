@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background: url("img/background.jpg");
+
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 15rem;
+    height: 5rem;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right span{
+    margin: 10px;
+}
+/* .right .menu select{
+    min-width: auto;
+    width: auto;
+} */
+
+select{
+    width: 8rem;
+    height: 2rem;
+}
+
+.right .btn{
+    background: #e50914;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.right .btn a{
+    color: #fff;
+    font-size: 20px;
+}
