@@ -1,0 +1,25 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#boxes{
+	margin: 2em auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.box{
+	width: 40%;
+	margin: 1%;
+	border:2px solid;
+	padding: 0.5em;
+	border-radius: 15px;
+}
+
+.box a{
+	display: none;
+}

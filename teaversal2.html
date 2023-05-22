@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="teaversal2.css">
+</head>
+<body>
+
+	<div id="wrapper">
+		<div id="boxes">
+			<div class="box">
+				<h2>box 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a href="">Show box</a>
+			</div>
+
+			<div class="box">
+				<h2>box 2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a href="">Show box</a>
+			</div>
+
+
+			<div class="box">
+				<h2>box 3</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a href="">Show box</a>
+			</div>
+
+			<div class="box">
+				<h2>box 4</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a href="">Show box</a>
+			</div>
+
+
+		</div>
+	</div>
+
+	<script>
+
+		// const heading=document.querySelectorAll("h2")
+		// const anchor=document.querySelectorAll("a")
+		// for (let i = 0; i<heading .length; i++) {
+		// 	heading[i].addEventListener("click",function(){
+		// 	heading[i].style.display="none"
+		// 	heading[i].nextElementSibling.style.display="none"
+		// 	heading[i].nextElementSibling.nextElementSibling.style.display
+		// 	="block"
+		// })
+			
+
+		const boxes=document.querySelectorAll('.box')
+		boxes.forEach(box=>{
+			const head=box.querySelector('h2');
+			const paragraph=box.querySelector('p');
+
+
+			head.addEventListener('click',()=>{
+				head.remove();
+				paragraph.remove();
+			});
+		});
+		
+	</script>
+
+</body>
+</html>
