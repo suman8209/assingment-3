@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+</head>
+<body>
+		<!-- <div id="weapper">
+			<input type="text"placeholder="Hello">
+		</div> -->
+
+		<!-- <h1>Assignment</h1> -->
+		<input type="text"placeholder="name">
+		<button class="add" type="submit">add to array</button>
+		<button class="print"type="submit">print array</button>
+		<p></p>
+		<script>
+			// let a=document.querySelector("input")
+			// 	a.onblur=() => {
+			// let para =document.createElement("p")
+			// para.innerHTML = a.value;
+			// document.querySelector("#weapper").append(para)
+			// para.innerHTML=a.value.split('').reverse('').join('')
+
+			// }
+
+
+			let array=[]
+			let input= document.querySelector("input");
+			let add= document.querySelector(".add");
+			let print= document.querySelector(".print");
+			let output= document.querySelector("p");
+			add.onclick=() =>{
+				array.push(input.value);
+				console.log(array);
+				input.value=""
+			}
+			print.onclick=()=>{
+				let i = 0;
+				let x = setInterval(() => {
+					if(i === array.length - 1){
+						clearInterval(x);
+						output.innerHTML += array[i++]
+					}else{
+						output.innerHTML += array[i++] + "   "
+					}
+				},1000)
+				
+			}
+
+			
+
+
+
+			
+		</script>
+</body>
+</html>
