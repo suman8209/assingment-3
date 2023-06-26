@@ -1,66 +1,76 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	font-family: robot, sans-serif;
 }
-
-.container {
-    width: 90%;
-    margin: 0 auto;
+body{
+	background-color: pink;
 }
-
-a{
-    text-decoration: none;
+h1{
+	text-align: center;
 }
-
-header{
-    background: url("img/background.jpg");
+.header{
+	background-color: blue;
+}
+.score{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
 }
+.score h3{
+	font-size: 20px;
 
-.head{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-
-.logo{
-    width: 15rem;
-    height: 5rem;
+.score button{
+	font-size: 15px;
+	padding: .5rem 1rem;
+	cursor: pointer;
 }
-
-.logo img{
-    width: 100%;
-    height: 100%;
+#content {
+	position: relative;
+	width: 59%;
+	margin: 0 auto;
 }
+#content .boxes{
+	display: flex;
+	flex-wrap: wrap;
 
-.right{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-
-.right span{
-    margin: 10px;
+#content .box{
+	width: 3.2em;
+	height: 3.2em;
+	border:1px solid #000;
+	margin: .6em.9em;
+	cursor: pointer;
 }
-/* .right .menu select{
-    min-width: auto;
-    width: auto;
-} */
-
-select{
-    width: 8rem;
-    height: 2rem;
+#content div.right{
+	background: green;
 }
-
-.right .btn{
-    background: #e50914;
-    padding: 8px;
-    border-radius: 5px;
+#content div.wrong{
+	background-color: red;
+	background-image: url("img/bomb.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
 }
-
-.right .btn a{
-    color: #fff;
-    font-size: 20px;
+.bomb{
+	display: flex;
+}
+.bomb p{
+	color: #fff;
+	font-size: 2em;
+}
+.gameOver{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0,0,0,0.7);
 }
